@@ -1,0 +1,339 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #f4f6fa;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #23314a;
+  min-height: 100vh;
+}
+
+/* Banner/Profile Section */
+.banner-area {
+  position: relative;
+  width: 100vw;
+  height: 130px;
+  background: #ececec;
+  overflow: visible;
+}
+.banner {
+  width: 100vw;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+}
+.profile-pic {
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 6px 18px #0002;
+  background: #fff;
+  object-fit: cover;
+  z-index: 10;
+}
+.profile-name {
+  margin-top: 48px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #23233b;
+}
+
+/* Bio/Intro Card */
+.info-card {
+  background: #fff;
+  margin: 16px auto;
+  padding: 18px 17px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #0001;
+  max-width: 92vw;
+}
+.card-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #1a99ff;
+  margin-bottom: 8px;
+}
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #505164;
+}
+
+/* Contact Card UI */
+.contact-card {
+  max-width: 360px;
+  margin: 0 auto 20px auto;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 14px #0002;
+  padding: 22px 14px 15px 14px;
+  text-align: center;
+}
+.contact-header {
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 13px;
+  color: #6d42ec;
+}
+.contact-details-ui { margin-bottom: 7px; }
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 5px 0 7px 0;
+}
+.contact-icon { font-size: 1.18em; }
+.contact-text {
+  font-size: 1.01em;
+  color: #444;
+  letter-spacing: 0.02em;
+}
+.contact-links {
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.contact-social {
+  padding: 8px 19px;
+  border-radius: 20px;
+  font-size: 0.99rem;
+  font-weight: 700;
+  border: 2px solid #1a99ff;
+  background: #f4f8ff;
+  color: #2370b8;
+  text-decoration: none;
+  box-shadow: 0 1px 6px #0001;
+  transition: background 0.18s, color 0.14s, border 0.18s;
+}
+.contact-social.fb { border-color: #3b5998; color: #3b5998;}
+.contact-social.ig { border-color: #c13584; color: #c13584;}
+.contact-social.wa { border-color: #25d366; color: #25d366;}
+.contact-social:hover { background: #1a99ff; color: #fff; border-color: #1a99ff; }
+.contact-social.fb:hover { background: #3b5998; }
+.contact-social.ig:hover { background: #c13584; }
+.contact-social.wa:hover { background: #25d366; }
+
+/* Gallery Section */
+.students-section {
+  text-align: center;
+  margin: 25px 0 22px 0;
+}
+.gallery-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+  color: #0078d7;
+}
+.gallery-images {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.batch-pic {
+  width: 92vw;
+  max-width: 370px;
+  border-radius: 12px;
+  box-shadow: 0 3px 18px #0001;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Batch/Class Card (for batch9.html etc) */
+.batch-card {
+  margin: 45px auto;
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 0 5px 32px #b3cdf025;
+  display: flex;
+  align-items: flex-start;
+  max-width: 600px;
+  overflow: hidden;
+  transition: box-shadow 0.13s;
+}
+.batch-card:hover {
+  box-shadow: 0 8px 38px #69b9f055;
+}
+.batch-img {
+  width: 210px;
+  height: 210px;
+  min-width: 160px;
+  object-fit: cover;
+  background: #eee;
+  box-shadow: 0 2px 16px #bddbf329;
+  display: block;
+}
+.batch-text {
+  padding: 19px 23px 17px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+}
+.batch-title {
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: #2352ba;
+  margin-bottom: 2px;
+}
+.batch-bio-title {
+  font-size: .98rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #187fa3;
+}
+.batch-bio {
+  font-size: 1rem;
+  line-height: 1.62;
+  color: #363d4f;
+}
+
+/* Extra Buttons */
+.extra-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px auto 12px auto;
+  flex-wrap: wrap;
+}
+.extra-btn {
+  padding: 11px 32px;
+  font-size: 1.09rem;
+  font-weight: 700;
+  border-radius: 26px;
+  border: 2px solid #6436e6;
+  background: #fff;
+  color: #6436e6;
+  box-shadow: 0 2px 9px #0001;
+  cursor: pointer;
+  transition: background 0.18s, color 0.17s;
+  margin: 5px 0;
+}
+.extra-btn:hover { background: #6436e6; color: #fff; }
+
+/* Class Navigation Buttons */
+.class-nav-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 14px;
+  color: #0078d7;
+  text-align: center;
+}
+.class-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+  margin: 18px auto 6px auto;
+}
+.class-btn {
+  width: 140px;
+  padding: 12px 0;
+  font-size: 1.09rem;
+  font-weight: 700;
+  border-radius: 26px;
+  border: 2px solid #9370db;
+  background: #fff;
+  color: #9370db;
+  box-shadow: 0 2px 7px #0001;
+  cursor: pointer;
+  transition: background 0.18s, color 0.15s;
+  margin: 5px 0;
+}
+.class-btn:hover {
+  background: #9370db;
+  color: #fff;
+}
+
+.btn-shine {
+  padding: 0 13px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    #9370db 28%, #fff 55%, #9370db 72%
+  );
+  background-size: 220px 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 7px #fff8;
+  animation: shine 2.8s infinite linear;
+  text-decoration: none;
+  transition: font-size 0.2s;
+}
+@keyframes shine {
+  0% { background-position: 0; }
+  60% { background-position: 220px; }
+  100% { background-position: 220px; }
+}
+
+/* Modal/Secret fix */
+.modal-bg {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(60,32,80,0.30);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 40px #0003;
+  padding: 18px 14px 12px 14px;
+  text-align: center;
+  max-width: 330px;
+  position: relative;
+}
+.modal-close {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #9370db;
+  position: absolute;
+  right: 14px;
+  top: 2px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.modal-close:hover { color: #222; }
+.credits {
+  text-align: center;
+  font-size: 1rem;
+  margin: 34px auto 38px auto;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .banner-area, .banner { height: 84px; }
+  .profile-pic { width: 54px; height: 54px; top: 42px; border-width: 3px;}
+  .profile-name { font-size: 1rem; margin-top: 26px; }
+  .info-card { max-width: 97vw; padding: 12px 6px;}
+  .batch-pic { max-width: 96vw; }
+  .class-btn { width: 97vw; max-width: 350px; }
+  .gallery-images { flex-direction: column; gap: 10px;}
+  .extra-buttons { flex-direction: column; gap: 11px;}
+  .batch-card { flex-direction: column; max-width: 97vw; }
+  .batch-img {
+    width: 100%;
+    height: 40vw;
+    max-height: 225px;
+    border-radius: 21px 21px 0 0;
+  }
+  .batch-text { padding: 13px 6vw 13px 6vw;}
+}
